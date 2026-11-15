@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://c2nx.com/sitemap.xml

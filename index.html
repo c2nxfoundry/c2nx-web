@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C2NX — Command & Control, Next Generation</title>
+<meta name="description" content="C2NX is a Texas venture studio that brings high-stakes operational problems into focus and forges the software and companies that solve them.">
+<link rel="canonical" href="https://c2nx.com/">
+<meta property="og:title" content="C2NX — Command & Control, Next Generation"><meta property="og:description" content="C2NX is a Texas venture studio that brings high-stakes operational problems into focus and forges the software and companies that solve them.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://c2nx.com/">
+<meta name="theme-color" content="#0F1115">
+<link rel="icon" href="favicon-32.png" sizes="32x32"><link rel="icon" href="assets/emblem.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+.hero{min-height:calc(100vh - 68px);display:grid;place-items:center;text-align:center;padding:72px 24px 64px;position:relative;overflow:hidden}
+.hero .grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(148,163,184,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(148,163,184,.05) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(circle at 50% 42%,#000 0,transparent 70%);pointer-events:none}
+.stage{position:relative;width:min(280px,56vw);aspect-ratio:1;margin:0 auto}
+.stage svg{width:100%;height:100%;overflow:visible}
+.emblem{animation:focus 2.6s cubic-bezier(.2,.7,.2,1) .2s both}
+.br{animation:flyin 1.6s cubic-bezier(.16,.84,.24,1) .2s both}
+.br.tl{--dx:-180px;--dy:-180px}.br.tr{--dx:180px;--dy:-180px}.br.bl{--dx:-180px;--dy:180px}.br.br2{--dx:180px;--dy:180px}
+.bar{transform-box:view-box;transform-origin:120px 120px;transform:rotate(var(--r));animation:converge 1.4s cubic-bezier(.2,.8,.2,1) .9s both}
+.dot{transform-box:fill-box;transform-origin:center;animation:ignite 1.1s cubic-bezier(.3,1.6,.4,1) 2.3s both}
+.halo{opacity:0;transform-box:fill-box;transform-origin:center;animation:halo 2.8s ease-out 2.5s infinite}
+.ring{position:absolute;inset:0;border:1px solid rgba(148,163,184,.35);border-radius:50%;opacity:0;animation:radiate 2.2s ease-out infinite}
+.ring:nth-child(2){animation-delay:.55s}.ring:nth-child(3){animation-delay:1.1s}
+.rings{position:absolute;inset:-18%;animation:ringsOut .6s ease 2.6s forwards}
+.hero h1{font-size:clamp(30px,4.6vw,56px);margin-top:40px;opacity:0;animation:rise .9s ease 2.9s forwards}
+.hero h1 .amber{color:var(--amber)}
+.hero .lead{margin:18px auto 0;opacity:0;animation:rise .9s ease 3.1s forwards}
+.hero .actions{justify-content:center;opacity:0;animation:rise .9s ease 3.3s forwards}
+@keyframes flyin{from{transform:translate(var(--dx),var(--dy));opacity:0}40%{opacity:1}to{transform:none;opacity:1}}
+@keyframes converge{from{transform:rotate(var(--r)) translateX(90px) scale(.6);opacity:0}to{transform:rotate(var(--r)) translateX(0) scale(1);opacity:1}}
+@keyframes focus{from{filter:blur(14px);transform:scale(1.18)}55%{filter:blur(6px)}to{filter:blur(0);transform:scale(1)}}
+@keyframes ignite{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes halo{0%{transform:scale(1);opacity:.75}100%{transform:scale(3.2);opacity:0}}
+@keyframes radiate{from{transform:scale(.35);opacity:.6}to{transform:scale(1.25);opacity:0}}
+@keyframes ringsOut{to{opacity:0;visibility:hidden}}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.hero *,.hero *::before{animation:none!important}.hero h1,.hero .lead,.hero .actions{opacity:1}.rings{display:none}.halo{opacity:.35}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap">
+<a class="mark" href="index.html" aria-label="C2NX home"><svg viewBox="0 0 240 240" aria-hidden="true"><rect x="0" y="0" width="62" height="18" fill="#F4F5F7"/><rect x="0" y="0" width="18" height="62" fill="#F4F5F7"/><rect x="178" y="0" width="62" height="18" fill="#F4F5F7"/><rect x="222" y="0" width="18" height="62" fill="#F4F5F7"/><rect x="0" y="222" width="62" height="18" fill="#F4F5F7"/><rect x="0" y="178" width="18" height="62" fill="#F4F5F7"/><rect x="178" y="222" width="62" height="18" fill="#F4F5F7"/><rect x="222" y="178" width="18" height="62" fill="#F4F5F7"/><rect x="150" y="111" width="50" height="18" fill="#F4F5F7" transform="rotate(45 120 120)"/><rect x="150" y="111" width="50" height="18" fill="#F4F5F7" transform="rotate(135 120 120)"/><rect x="150" y="111" width="50" height="18" fill="#F4F5F7" transform="rotate(225 120 120)"/><rect x="150" y="111" width="50" height="18" fill="#F4F5F7" transform="rotate(315 120 120)"/><circle cx="120" cy="120" r="15" fill="#D97706"/></svg>C2NX</a>
+<nav aria-label="Primary"><ul class="nav"><li class=""><a href="index.html#foundry">Foundry</a></li><li class="hide-sm"><a href="index.html#ventures">Ventures</a></li><li class="hide-sm"><a href="index.html#labs">Labs</a></li><li class=""><a href="governed-ai.html">Governed AI</a></li><li class=""><a href="mailto:contact@c2nx.com">Contact</a></li></ul></nav>
+</div></header>
+<main id="main">
+
+<div class="hero"><div class="grid-bg" aria-hidden="true"></div><div>
+  <div class="stage" role="img" aria-label="C2NX crosshair emblem coming into focus">
+    <div class="rings" aria-hidden="true"><span class="ring"></span><span class="ring"></span><span class="ring"></span></div>
+    <svg viewBox="0 0 240 240" aria-hidden="true"><defs><filter id="glow" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g class="emblem"><g class="br tl"><rect x="0" y="0" width="62" height="18" fill="#F4F5F7"/><rect x="0" y="0" width="18" height="62" fill="#F4F5F7"/></g><g class="br tr"><rect x="178" y="0" width="62" height="18" fill="#F4F5F7"/><rect x="222" y="0" width="18" height="62" fill="#F4F5F7"/></g><g class="br bl"><rect x="0" y="222" width="62" height="18" fill="#F4F5F7"/><rect x="0" y="178" width="18" height="62" fill="#F4F5F7"/></g><g class="br br2"><rect x="178" y="222" width="62" height="18" fill="#F4F5F7"/><rect x="222" y="178" width="18" height="62" fill="#F4F5F7"/></g><rect class="bar" style="--r:45deg" x="150" y="111" width="50" height="18" fill="#F4F5F7"/><rect class="bar" style="--r:135deg" x="150" y="111" width="50" height="18" fill="#F4F5F7"/><rect class="bar" style="--r:225deg" x="150" y="111" width="50" height="18" fill="#F4F5F7"/><rect class="bar" style="--r:315deg" x="150" y="111" width="50" height="18" fill="#F4F5F7"/><circle class="halo" cx="120" cy="120" r="15" fill="none" stroke="#D97706" stroke-width="2"/><circle class="dot" cx="120" cy="120" r="15" fill="#D97706" filter="url(#glow)"/></g></svg>
+  </div>
+  <h1>Command &amp; Control. <span class="amber">Next Generation.</span></h1>
+  <p class="lead">We bring high-stakes operational problems into focus — then forge the software and the companies that solve them.</p>
+  <div class="actions"><a class="btn" href="governed-ai.html">Governed AI for your firm</a><a class="btn ghost" href="#what-we-do">What we do</a></div>
+</div></div>
+
+<section id="what-we-do"><div class="wrap">
+  <span class="kicker">What we do</span>
+  <h2>One studio. Three lines of work.</h2>
+  <p class="lead">C2NX is a Texas venture studio and holding company. We find the places where fragmented information causes failure, engineer the fix, and run it as a durable business.</p>
+  <div class="grid-3">
+    <article class="card" id="foundry"><span class="tag"><b>C2NX</b> Foundry</span><h3>We build</h3><p>Software and services forged from real operational problems, engineered security-first and designed to run with minimal overhead.</p></article>
+    <article class="card" id="ventures"><span class="tag"><b>C2NX</b> Ventures</span><h3>We partner and invest</h3><p>We take stakes in, and partner with, operating companies where disciplined systems and AI-era operations create outsized value.</p></article>
+    <article class="card" id="labs"><span class="tag"><b>C2NX</b> Labs</span><h3>We prove it on ourselves</h3><p>Our R&amp;D bench. C2NX runs on the same governed AI operating system we install for clients — every improvement is tested here first.</p></article>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <span class="kicker">Now forging</span>
+  <h2>Governed AI operating systems for firms that hold confidential data.</h2>
+  <p class="lead">Your team is already using AI. The question is whether it is governed. We install a security-hardened AI operating system inside your own environment — identity, permissions, data rules, approvals and audit trail included — and keep it running.</p>
+  <div class="actions"><a class="btn" href="governed-ai.html">See how it works</a><a class="btn ghost" href="mailto:contact@c2nx.com?subject=Founding%20client%20program">Ask about the founding-client program</a></div>
+</div></section>
+
+<section><div class="wrap">
+  <span class="kicker">How we operate</span>
+  <h2>Quiet precision.</h2>
+  <div class="grid-3">
+    <div class="card"><h3>Security first</h3><p>Built by a career security professional. Least privilege, MFA, data classification and audit logging are the default, not the upsell.</p></div>
+    <div class="card"><h3>Your environment, your data</h3><p>We install inside your accounts. We do not host your data, and you keep full ownership and control.</p></div>
+    <div class="card"><h3>Built to last</h3><p>Every system ships with documentation, policies and a named owner — so it survives staff turnover and audits.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <span class="kicker">Contact</span>
+  <h2>Bring us the problem.</h2>
+  <p class="lead">Owner-led firm, operator, or founder with a high-stakes bottleneck? Tell us what is breaking. We reply within two business days.</p>
+  <div class="actions"><a class="btn" href="mailto:contact@c2nx.com">contact@c2nx.com</a></div>
+</div></section>
+
+</main>
+<footer class="site-footer"><div class="wrap">
+<div><span class="tagline">Forging What's Next. · Quiet Precision. Relentless Build.</span><br>© 2026 C2NX · Texas · <a href="mailto:contact@c2nx.com">contact@c2nx.com</a></div>
+<div><a href="governed-ai.html">Governed AI</a><a href="privacy.html">Privacy</a><a href="accessibility.html">Accessibility</a></div>
+</div></footer>
+</body>
+</html>
