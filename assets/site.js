@@ -31,7 +31,7 @@
     strip.setAttribute("aria-hidden", "true");
     body.appendChild(strip);
 
-    const HEADER_H = 68, MAX_DOCK = 140, HEADER_LOGO = 48, TITLE_PX = 17, PAD = 24;
+    const HEADER_H = 68, MAX_DOCK = 140, HEADER_LOGO = 48, TITLE_PX = 21, PAD = 24;
     let m = null, raf = 0;
 
     function textWidth(el) {
@@ -64,7 +64,7 @@
       const eY = big ? 14 : (HEADER_H - eSize) / 2;
 
       // Title target: centred in the header bar if it clears logo and nav, otherwise a strip just below.
-      const tScale = (vw < 600 ? 13 : TITLE_PX) / fs;
+      const tScale = (vw < 600 ? 15 : TITLE_PX) / fs;
       const shown = lineW * tScale;
       const navLeft = nav ? nav.getBoundingClientRect().left : vw;
       const logoRight = big ? 0 : eX + eSize;
